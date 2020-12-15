@@ -1,0 +1,88 @@
+body{
+    background-color:rgb(41, 38, 38);
+}
+
+#welcome-sign{
+    font-family: 'Monoton', cursive;
+    width: 100%;
+    margin-top: 10%;
+    padding: 0%;
+    position: relative;
+    -webkit-animation: moving 2s ease;
+    animation: moving 2s ease-in;
+    }
+    .welcome{
+        margin: 0%;
+    }
+    .date{
+        margin-top: -15%;
+    }
+    #next{
+        margin: 50px;
+
+    }
+    #clickme{
+        width: 200px;
+        height: 50px;
+        color: white;
+        background-color: rgb(41, 38, 38);
+        font-family: 'Monoton', cursive;
+        font-size: 20px;
+        border-width: white 10px;
+        border-radius: 10px 10px 10px 10px;
+        animation: fadein 3s cubic-bezier(.95, 0.05, 0.7, 0.035);
+        cursor: pointer;
+    }
+
+    .table{
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        height: 50px;
+        margin: 0%;
+        margin-top: 5%;
+        text-align: center;
+        -webkit-animation: logo-moving 5s;
+        animation: logo-moving 5s ease;
+    }
+    #logo-bar{
+        padding: 0%;
+        
+    }
+    
+
+    li{
+        display: inline;
+        position: relative;
+        padding-left: 1%;
+        list-style: none;
+        
+}
+
+@keyframes moving{
+    from {top: 15%;
+        opacity: 0%;
+    }
+    to {top: 0%;
+        opacity: 100%;
+    }
+}
+@keyframes logo-moving{
+    from {
+        transform: translateY(200px);
+        opacity: 0;    
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 100%;
+    }
+
+}
+@keyframes fadein{
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}

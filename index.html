@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+        </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div id="welcome-sign">
+        <h1 id="welcome" onmouseover="reply_click(this.id)" style="font-size:72px; color: white; text-align: center; ">Welcome</h1>
+        <h3 id="date" onmouseover="reply_click(this.id)" style="font-size: 20px; color: white; text-align:center;"></h3> 
+    </div>
+
+    <div id= "next" style=" text-align: center;">
+            <a href="Start homepage.html"><button id="clickme" onmouseover="reply_click(this.id)" >Continue</button> </a>
+    </div>
+
+    <div class="table">
+        <ul id="logo-bar" style="list-style: none;margin: 0px;">
+            <li><i class="fab fa-css3" 
+                style="font-size: 40px; color: white;" 
+                id="1"
+                onmouseover="reply_click(this.id)">
+                </i></li>
+            <li><i class="fab fa-js" 
+                style="font-size: 40px; color: white;" 
+                id="2" 
+                onmouseover="reply_click(this.id)">
+            </i></li>
+            <li><i class=" fab fa-html5" 
+                style="font-size: 40px; color: white;" 
+                id="3" 
+                onmouseover="reply_click(this.id)">
+            </i></li>
+            <li><i class="fab fa-linkedin" 
+                style="font-size: 40px; color: white;" 
+                id="4" 
+                onmouseover="reply_click(this.id)">
+            </i></li>
+            <li><i class="fab fa-github" 
+                style="font-size: 40px; color: white;" 
+                id="5" 
+                onmouseover="reply_click(this.id)">
+            </i></li>
+        </ul>
+    </div>
+    <script>
+            d = new Date();
+            y = d.getFullYear();
+            m = d.getMonth() +1;
+            n = d.getDate();
+            document.getElementById("date").innerHTML = m+"/"+n+"/"+ y;
+
+        function color() {
+            document.getElementById("welcome").style.color = "red";
+        
+        }
+        function reply_click(clicked_id){
+            document.getElementById(clicked_id).style.color = "FFCF4A";
+        }
+    </script>
+</body>
+</html>
